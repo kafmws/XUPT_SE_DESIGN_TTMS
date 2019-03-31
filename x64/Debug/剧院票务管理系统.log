@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+c:\users\hp\source\repos\剧院票务管理系统\剧院票务管理系统\stdafx.h(28): warning C4081: 应输入“newline”；找到“;”
+  filefunction.cpp
+  friendly.cpp
+  initialize.cpp
+  Linklist.cpp
+  process.cpp
+  sonfunction.cpp
+  welcome.cpp
+  window.cpp
+  剧院票务管理系统.cpp
+  正在生成代码...
+  剧院票务管理系统.vcxproj -> C:\Users\HP\source\repos\剧院票务管理系统\x64\Debug\剧院票务管理系统.exe

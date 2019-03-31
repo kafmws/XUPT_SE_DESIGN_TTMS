@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  filefunction.cpp
+  friendly.cpp
+  initialize.cpp
+  Linklist.cpp
+  process.cpp
+  sonfunction.cpp
+  welcome.cpp
+  window.cpp
+  剧院票务管理系统.cpp
+  正在生成代码
+  All 157 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  剧院票务管理系统.vcxproj -> C:\Users\HP\source\repos\剧院票务管理系统\Release\剧院票务管理系统.exe
