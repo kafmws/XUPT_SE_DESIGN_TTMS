@@ -104,6 +104,7 @@ void delete_program(Program *p) {//按照ID或名字删除剧目
 			p->pre->next = p->next;
 			if (p->next)//p不为最后一个
 				p->next->pre = p->pre;
+			if (p == list.program_tail)list.program_tail = p->pre;
 			free(p);
 			save_program();
 			list.program_head->element.cost -= 1;
@@ -289,6 +290,7 @@ void delete_studio(Studio *p) {//删除指定放映厅
 			if (p->next)
 				p->next->pre = p->pre;
 			delete_seat(p);//删除该放映厅所有座位
+			if (p == list.studio_tail)list.studio_tail = p->pre;
 			free(p);
 			list.studio_head->element.seatx--;
 			save_studio_and_seat();
@@ -616,6 +618,7 @@ void delete_plan(Plan *p) {//隐藏放映计划及票
 			//p->next = list.plan_tem_tail->next; p->pre = list.plan_tem_tail;
 			//list.plan_tem_tail->next = p; list.plan_tem_tail = p;//移动p到plan_tem链表
 			delete_ticket(p);
+			if (p == list.plan_tail)list.plan_tail = p->pre;
 			free(p);
 			print_ok();
 		}
@@ -1137,6 +1140,7 @@ void  delete_account(Account *p){//删除账号信息
 			if (p->next) {
 				p->next->pre = p->pre;
 			}
+			if (p == list.account_tail)list.account_tail = p->pre;
 			free(p);
 			save_account();
 			print_ok();
